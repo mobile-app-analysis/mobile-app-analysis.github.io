@@ -24,7 +24,7 @@
 <h4>Background</h4> 
 
 Mobile apps are typical <i>GUI-centered</i> and <i>event-driven</i> software.
-They are ubiquitous and serving the needs of our daily
+They are now ubiquitous and serving the needs of our daily
 life in many different aspects. However, due to the
 complex end-user environments (e.g., different OSes, 
 vendor devices and third-party libraries), ensuring app 
@@ -45,14 +45,11 @@ years and developed several effective app analysis and testing techniques, inclu
  <a href="https://github.com/functional-fuzzing-android-apps/home"><font size="3"><b>Genie</b></font></a>, <a href="https://github.com/setting-defect-fuzzing/home"><font size="3"><b>SetDroid</b></font></a> and <a href=""><font size="3"><b>Odin</b></font></a>, fully automated GUI fuzzing techniques for finding <i>non-crashing, logic</i> bugs;
 </li>
 <li>
- <a href="https://github.com/setting-defect-fuzzing/home"><font size="3"><b>SetChecker</b></font></a>, a static analysis tool for finding system setting related bugs;
-</li>
-<li>
 <a href="https://github.com/the-themis-benchmarks/home"><font size="3"><b>Themis</b></font></a>, the first <i>ground-truth</i> benchmark for evaluating/analyzing automated GUI fuzzing tools;
 </li>
 <li>
-<a href="https://github.com/tingsu/DroidDefects"><font size="3"><b>DroidDefects</b></font></a>/<a href="https://crashanalysis.github.io/"><font size="3"><b>CrashAnalysis</b></font></a>: the dataset of framework-specific exception bugs of Android apps.
-</li><br>
+ <a href="https://github.com/setting-defect-fuzzing/home"><font size="3"><b>SetChecker</b></font></a>, a static analysis tool for finding system setting related bugs.
+</li>
 
 
 <h4>Research Impact</h4> 
@@ -74,29 +71,20 @@ Gmail: <b>1</b> (confirmed) / <b>1</b> (fixed)<br>
 
 
 Up to now:<br>
-- Stoat has become a representative model-based testing approach for Android (<a href="https://scholar.google.com.sg/citations?view_op=view_citation&hl=en&user=GHPWI7oAAAAJ&citation_for_view=GHPWI7oAAAAJ:vV6vV6tmYwMC">cited by 240+</a>), and used/compared/extended by <a href="https://github.com/tingsu/Stoat#papers-that-uses-extends-or-compares-with-stoat">many work</a>); <br>
+- Stoat has become a representative model-based testing approach for Android (<a href="https://scholar.google.com.sg/citations?view_op=view_citation&hl=en&user=GHPWI7oAAAAJ&citation_for_view=GHPWI7oAAAAJ:vV6vV6tmYwMC">cited by 225+</a>), and used/compared/extended by <a href="https://github.com/tingsu/Stoat#papers-that-uses-extends-or-compares-with-stoat">many work</a>); <br>
 - SetDroid has been intergated into <a href="https://github.com/bytedance/Fastbot_Android">FastBot</a> 
 (ByteDance's official app testing infrastructure) for daily testing; <br>
 - Themis has helped optimize/enhance <a href="https://github.com/bytedance/Fastbot_Android">FastBot</a>
-with several new GUI fuzzing & mutation strategies.
+with seveal new GUI fuzzing & mutation strategies.
 <br><br>
+
+
+<strong>If you have some questions or want to know more, feel free to contact us (<a href="https://tingsu.github.io/">Ting Su</a>).</strong><br><br>
+
 
 
 <h3>Selected Publications</h3> 
 
-<li>
-<strong>Fastbot2: Reusable Automated Model-based GUI Testing for Android Enhanced by Reinforcement Learning</strong><img src="files/new.gif" alt="" /><br/>
-    Zhengwei Lv, <a href="https://chao-peng.github.io/">Chao Peng</a>, Zhao Zhang, <a href="https://tingsu.github.io/">Ting Su</a>, Kai Liu, Ping Yang<br/>
-    <i>37th IEEE/ACM International Conference on Automated Software Engineering</i><br/>
-    <a href="https://conf.researchr.org/home/ase-2022">ASE 2022</a> (industry track), <a href="https://tingsu.github.io/files/ASE22-industry-Fastbot.pdf">pdf</a>.
-</li><br>
-
- <li>
-<strong>Detecting Non-crashing Functional Bugs in Android Apps via Deep-State Differential Analysis</strong><img src="files/new.gif" alt="" /><br/>
-    <a href="https://cv.juewang.info/">Jue Wang</a>, <a href="https://cs.nju.edu.cn/ics/people/yanyanjiang/index.html">Yanyan Jiang</a>, <a href="https://tingsu.github.io/">Ting Su</a>, Shaohua Li, <a href="https://cs.nju.edu.cn/changxu/index.htm">Chang Xu</a>, Jian Lu, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
-    <i>ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i><br/>
-    ESEC/FSE 2022, <a href="https://tingsu.github.io/files/fse22-odin.pdf">pdf</a>.
-</li><br>
 
 <li>
 <strong>Fully Automated Functional Fuzzing of Android Apps for Detecting Non-Crashing Logic Bugs</strong><img src="files/new.gif" alt="" /><br/>
@@ -184,16 +172,19 @@ with several new GUI fuzzing & mutation strategies.
 <li>
     <strong>Characterizing and Finding System Setting-Related Defects in Android Apps</strong><img src="files/new.gif" alt="" /><br/>
     <a href="https://jinglingsun.github.io/">Jingling Sun</a>, <a href="https://tingsu.github.io/">Ting Su</a>, Kai Liu, <a href="https://chao-peng.github.io/">Chao Peng</a>, Zhao Zhang, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a>, <a href="https://taoxiease.github.io/">Tao Xie</a>, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
-    <i>IEEE Transactions on Software Engineering</i> (under review)<br/> 
 </li><br>
 
 
 <br><br>
-<tt>Acknowledge: Our research has received generous funding support from Chinese NSF, Swiss NSF, Google, ByteDance, and NTUitive Gap Fund.</tt><br><br>
+<tt>Acknowledge: Our research has received generous funding support from Chinese NSF, Swiss NSF, Google, ByteDance, and NTUitive Gap Fund.</tt>
 
-<tt>If you have any question or want to know more, feel free to contact us (<a href="https://tingsu.github.io/">Ting Su</a>).</tt><br>
-<br>
+</font>
 
+</font>
+
+<br><br><br>
+
+<tt>last modified: 2022.6.8</tt>
 <br><br><br><br>
 </body>
 </html>
