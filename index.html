@@ -1,0 +1,190 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+    <meta http-equiv="Content-Type"content="text/html; charset=iso-8859-1">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>a{TEXT-DECORATION:none}</style> 
+  <title>Mobile App Analysis and Testing</title>
+</head>
+
+
+<body bgcolor="#ffffff">
+
+<link type="text/css" rel="stylesheet" href="style.css">
+
+<font face="ariel,helvetica">
+
+<h2>Research on Mobile App Analysis and Testing</h2>
+
+<h4>Background</h4> 
+
+Mobile apps are typical <i>GUI-centered</i> and <i>event-driven</i> software.
+They are now ubiquitous and serving the needs of our daily
+life in many different aspects. However, due to the
+complex end-user environments (e.g., different OSes, 
+vendor devices and third-party libraries), ensuring app 
+reliability and correctness has thus become a longstanding 
+challenge in both academia and industry (see <a href="https://github.com/XYIheng/AndroidTesting">literature</a>). Our research aims to tackle this challenge by developing novel, effective 
+and practical approaches and techniques to improve app quality, reliability
+and usability. <br>
+
+<h4>Techniques, Tools and Dataset</h4> 
+
+To this end, we have devoted much research effort over the recent
+years and developed several effective app analysis and testing techniques, including:<br>
+
+<li>
+ <a href="https://github.com/tingsu/Stoat"><font size="3"><b>Stoat</b></font></a>, a fully automated GUI fuzzing technique for finding <i>crashing</i> bugs; 
+</li>
+<li>
+ <a href="https://github.com/functional-fuzzing-android-apps/home"><font size="3"><b>Genie</b></font></a>, <a href="https://github.com/setting-defect-fuzzing/home"><font size="3"><b>SetDroid</b></font></a> and <a href=""><font size="3"><b>Odin</b></font></a>, fully automated GUI fuzzing techniques for finding <i>non-crashing, logic</i> bugs;
+</li>
+<li>
+<a href="https://github.com/the-themis-benchmarks/home"><font size="3"><b>Themis</b></font></a>, the first <i>ground-truth</i> benchmark for evaluating/analyzing automated GUI fuzzing tools;
+</li>
+<li>
+ <a href="https://github.com/setting-defect-fuzzing/home"><font size="3"><b>SetChecker</b></font></a>, a static analysis tool for finding system setting related bugs.
+</li>
+
+
+<h4>Research Impact</h4> 
+
+<!--Our techniques have been applied to test 6000+ open-source and industrial Android apps and found 5800+ unique bugs. -->
+In addition to successfully finding many bugs in open-source apps, our techniques have found and reported 100+ bugs in several <i>highly-popular industrial apps</i>
+with billions of monthly-active users, many of which have been already fixed by the app vendors. For example:
+<p>
+<!-- Douyin: <b>75</b> (confirmed) / <b>31</b> (fixed)<br> -->
+<!-- TikTok: <b>3</b> (confirmed) / <b>1</b> (fixed)<br> -->
+TikTok (Douyin): <b>78</b> (confirmed) / <b>32</b> (fixed)<br> 
+WeChat: <b>11</b> (confirmed) / <b>11</b> (fixed)<br>
+CapCut: <b>4</b> (confirmed) / <b>4</b> (fixed)<br>
+QQmail: <b>2</b> (confirmed) / <b>2</b> (fixed)<br>
+Google+: <b>2</b> (confirmed) / <b>2</b> (fixed)<br>
+AlipayHK: <b>2</b> (confirmed) / <b>2</b> (fixed)<br>
+Gmail: <b>1</b> (confirmed) / <b>1</b> (fixed)<br>
+</p>
+
+
+Up to now:<br>
+- Stoat has become a representative model-based testing approach for Android (<a href="https://scholar.google.com.sg/citations?view_op=view_citation&hl=en&user=GHPWI7oAAAAJ&citation_for_view=GHPWI7oAAAAJ:vV6vV6tmYwMC">cited by 225+</a>), and used/compared/extended by <a href="https://github.com/tingsu/Stoat#papers-that-uses-extends-or-compares-with-stoat">many work</a>); <br>
+- SetDroid has been intergated into <a href="https://github.com/bytedance/Fastbot_Android">FastBot</a> 
+(ByteDance's official app testing infrastructure) for daily testing; <br>
+- Themis has helped optimize/enhance <a href="https://github.com/bytedance/Fastbot_Android">FastBot</a>
+with seveal new GUI fuzzing & mutation strategies.
+<br><br>
+
+
+<strong>If you have some questions or want to know more, feel free to contact us (<a href="https://tingsu.github.io/">Ting Su</a>).</strong><br><br>
+
+
+
+<h3>Selected Publications</h3> 
+
+
+<li>
+<strong>Fully Automated Functional Fuzzing of Android Apps for Detecting Non-Crashing Logic Bugs</strong><img src="files/new.gif" alt="" /><br/>
+<a href="https://tingsu.github.io/">Ting Su</a>, <a href="https://scholar.google.com.sg/citations?user=MCOguzYAAAAJ">Yichen Yan</a>, <a href="https://cv.juewang.info/">Jue Wang</a>, <a href="https://jinglingsun.github.io/">Jingling Sun</a>, Yiheng Xiong, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a>, Ke Wang, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
+    <i>ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications</i><br/>
+    SPLASH/OOPSLA 2021, <a href="https://tingsu.github.io/files/oopsla21-Genie.pdf">pdf</a>, <a href="https://youtu.be/RoOJ5s1dh-w">talk video</a>, <a href="https://github.com/functional-fuzzing-android-apps/home">Genie</a>.
+</li><br>
+	
+<li>
+<strong>Benchmarking Automated GUI Testing for Android against Real-World Bugs</strong><img src="files/new.gif" alt="" /><br/>
+<a href="https://tingsu.github.io/">Ting Su</a>, <a href="https://cv.juewang.info/">Jue Wang</a>, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
+    <i>29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i><br/>
+    ESEC/FSE 2021, <a href="https://tingsu.github.io/files/fse21-themis.pdf">pdf</a>, <a href="https://www.youtube.com/watch?v=ZDps3zx2pCY">talk video</a>, <a href="https://github.com/the-themis-benchmarks/home">Themis</a>.
+</li><br>
+
+<li>
+<strong>Understanding and Finding System Setting-Related Defects in Android Apps</strong><img src="files/new.gif" alt="" /><br/>
+<a href="https://jinglingsun.github.io/">Jingling Sun</a>, <a href="https://tingsu.github.io/">Ting Su</a>, Junxin Li, <a href="https://zhendong2050.github.io/">Zhen Dong</a>, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a>, <a href="https://taoxiease.github.io/">Tao Xie</a>, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
+    <i>30th ACM SIGSOFT International Symposium on Software Testing and Analysis</i><br/>
+    ISSTA 2021, <a href="https://tingsu.github.io/files/issta21-Setdroid.pdf">pdf</a>, <a href="https://github.com/setting-defect-fuzzing/home">SetDroid</a>.
+</li><br>
+
+<li>
+<strong>Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps</strong><img src="files/new.gif" alt="" /><br/>
+<a href="https://tingsu.github.io/">Ting Su</a>, <a href="https://lingling-fan.github.io/">Lingling Fan</a>, <a href="https://sen-chen.github.io/">Sen Chen</a>, <a href="https://personal.ntu.edu.sg/yangliu/">Yang Liu</a>, Lihua Xu, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a>, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
+    <i>IEEE Transactions on Software Engineering</i><br/>
+    TSE 2020, <a href="https://tingsu.github.io/files/tse2022-study.pdf">pdf</a>, <a href="https://github.com/tingsu/DroidDefects">DroidDefects</a>.
+</li><br>
+
+<li>
+<strong>Efficiently Manifesting Asynchronous Programming Errors in Android Apps</strong><br/>
+    <a href="https://lingling-fan.github.io/">Lingling Fan</a>, <a href="https://tingsu.github.io/">Ting Su</a>, <a href="https://sen-chen.github.io/">Sen Chen</a>, <a href="https://impillar.github.io/">Guozhu Meng</a>, <a href="https://personal.ntu.edu.sg/yangliu/">Yang Liu</a>, Lihua Xu, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a><br/>
+    <i>The 33rd IEEE/ACM International Conference on Automated Software Engineering</i> <br>
+    ASE 2018, <a href="https://tingsu.github.io/files/ase18-async.pdf">pdf</a>.<br>
+</li><br>
+
+<li> 
+    <strong>Large-Scale Analysis of Framework-Specific Exceptions in Android Apps</strong><br/>
+    <a href="https://lingling-fan.github.io/">Lingling Fan</a><sup>#</sup>, <a href="https://tingsu.github.io/">Ting Su</a><sup>#</sup>, <a href="https://sen-chen.github.io/"><a href="https://sen-chen.github.io/">Sen Chen</a></a>, <a href="https://impillar.github.io/">Guozhu Meng</a>, <a href="https://personal.ntu.edu.sg/yangliu/">Yang Liu</a>, Lihua Xu, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a> and <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a> <br/>
+    <i> The 40th International Conference on Software Engineering</i> <br>
+    ICSE 2018, <a href="https://tingsu.github.io/files/icse18-crash.pdf">pdf</a>, <a href="https://tingsu.github.io/files/icse18-app-fault-study.pdf">slides</a>, <a href="https://crashanalysis.github.io/">CrashAnalysis</a>. <br>
+    <font size="2">(<sup>#</sup>Equal Contribution)</font>
+</li><br>
+
+	&nbsp; &nbsp; <i><b><font color="red">ACM SIGSOFT Distinguished Paper Award</font></b></i><br><br>
+		
+		
+<li>
+    <strong>Guided, Stochastic Model-Based GUI Testing of Android Apps</strong><br/>
+    <a href="https://tingsu.github.io/">Ting Su</a>, <a href="https://impillar.github.io/">Guozhu Meng</a>, <a href="https://ddst.sjtu.edu.cn/en/MemberDetail.aspx?id=11">Yuting Chen</a>, Ke Wu, Weiming Yang, Yao Yao, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ"><a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a></a>, <a href="https://personal.ntu.edu.sg/yangliu/">Yang Liu</a>, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a> <br/>
+    <i>The 11th joint meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering</i><br/>
+    ESEC/FSE 2017, <a href="https://tingsu.github.io/files/fse17-stoat.pdf">pdf</a>, <a href="https://tingsu.github.io/files/fse17-stoat.pptx">slides</a>, <a href="https://github.com/tingsu/Stoat">Stoat</a>.<br>
+</li><br>
+
+	&nbsp; &nbsp;<i><b><font color="red">Best Research Prototype Tool Award</font></b> (NASAC 2017 held by CCF)</i><br><br>
+</li>
+	
+<h3>Other Publications</h3> 
+
+
+<li>
+    <strong>SetDroid: Detecting User-configurable Setting Issues of Android Apps via Metamorphic Fuzzing</strong><br/>
+    <a href="https://jinglingsun.github.io/">Jingling Sun</a><br/>
+    <i>The 43th International Conference on Software Engineering</i><br/>
+   ICSE 2021, ACM Student Research Competition, <a href="https://ieeexplore.ieee.org/document/9402631">pdf</a><br><br>
+    
+    
+    &nbsp; &nbsp;<i><b><a href=""><font color="red">Second Place of ACM Student Research Competition</font></a></b></i><br><br>
+
+</li>
+
+<li>
+    <strong>FSMdroid: Guided GUI Testing of Android Apps</strong><br/>
+    <a href="https://tingsu.github.io/">Ting Su</a><br/>
+    <i>The 38th International Conference on Software Engineering</i><br/>
+    ICSE 2016, <a href="http://2016.icse.cs.txstate.edu/acmSRCAcceptedAbstracts">ACM Student Research Competition</a>, <a href="https://tingsu.github.io/files/fsmdroid.pdf">pdf</a>, <a href="http://www.sei.ecnu.edu.cn/Data/View/2175">Press</a><br><br>
+
+	&nbsp; &nbsp;<i><b><a href="https://tingsu.github.io/files/src.pdf"><font color="red">Golden Medal (First Place) of ACM Student Research Competition</font></a></b></i><br>
+
+</li>
+
+<br>
+<h3>Under Review</h3> 
+
+<li>
+    <strong>Characterizing and Finding System Setting-Related Defects in Android Apps</strong><img src="files/new.gif" alt="" /><br/>
+    <a href="https://jinglingsun.github.io/">Jingling Sun</a>, <a href="https://tingsu.github.io/">Ting Su</a>, Kai Liu, <a href="https://chao-peng.github.io/">Chao Peng</a>, Zhao Zhang, <a href="https://scholar.google.com/citations?user=niQAGcQAAAAJ">Geguang Pu</a>, <a href="https://taoxiease.github.io/">Tao Xie</a>, <a href="https://people.inf.ethz.ch/suz/">Zhendong Su</a><br/>
+</li><br>
+
+
+<br><br>
+<tt>Acknowledge: Our research has received generous funding support from Chinese NSF, Swiss NSF, Google, ByteDance, and NTUitive Gap Fund.</tt>
+
+</font>
+
+</font>
+
+<br><br><br>
+
+<tt>last modified: 2022.6.8</tt>
+<br><br><br><br>
+</body>
+</html>
